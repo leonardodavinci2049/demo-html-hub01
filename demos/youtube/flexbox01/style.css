@@ -1,15 +1,107 @@
-.demo {
+.demo-flex {
+  width: 90vw;
+  height: 90vh;
+  box-sizing: border-box;
+  border: 1px solid red;
   display: flex;
-  align-items: center;
+
+  /* flex-direction x-axis or z-axis  */
+  /* The flex-direction property defines in which direction the container wants to stack the flex items. */
+  /*OPTION: row: row-reverse: column: column-reverse: */
+  /* flex-direction: row; */
+
+
+
+      /* justify-content === row= x-axis x column = z-axis / 
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis. */
+  /*OPTION: flex-start: flex-end: center: space-between: space-around: space-evenly: */
+  /* justify-content: center; */
+
+
+
+  /* ALIGN-ITEMS row = z-axis x column = x-axis*/
+  /* The align-items property specifies the default alignment for items inside the flexible container. */
+  /*OPTION: stretch: center: flex-start: flex-end: baseline: */
+  /* align-items: center; */
+
+
+
+   /* flex-wrap */
+  /* The flex-wrap property specifies whether the flex items should wrap or not. */
+  /*OPTION: nowrap: wrap: wrap-reverse: */
+  /* flex-wrap: wrap; */
+
+
+
+ 
+
+  /* align-content */
+
+   /* It is guided by one or more lines of content, the additional lines are created by the wrap property */
+  /* The align-content property aligns the flexible container's lines within the flex container when there is extra space on the cross-axis. */
+  /*OPTION: stretch: center: flex-start: flex-end: space-between: space-around: */
+  /* align-content: space-between; */
+
+  gap: 10px;
+  /* column-gap: 10px; */
+  /* row-gap: 10px; */
+
+
+ 
+}
+#box-1 {
+  /* flex-grow */
+  /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+  /*OPTION: number */
+  flex-grow: 1;
+
+  /* flex-shrink : 0; */
+  /* The flex-shrink property specifies how much the item will shrink relative to the rest of the flexible items inside the same container. */
+  /*OPTION: number */
+  /* flex-shrink: 1;
+
+  /* flex-basis */
+  /* The flex-basis property specifies the initial length of a flexible item. */
+  /*OPTION: auto: length: percentage: content: */
+  /* flex-basis: 100px; */
+
+  /* flex */
+  /* The flex property is the shorthand for flex-grow, flex-shrink, and flex-basis properties. */
+  /*OPTION: none: [flex-grow] [flex-shrink] [flex-basis] */
+  /* flex: 1 1 100px; */
+
+  /* order */
+  /* The order property specifies the order of the flexible item, relative to the rest of the flexible items inside the same container. */
+  /*OPTION: number */
+  /* order: 1; */
+}  
+
+
+
+.box-flex-item {
+  /* flex-shrink: 1; */
+  flex-grow: 0;
+  display: flex;
   justify-content: center;
+  align-items: center;
 
-  
-}
-
-.box {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
   background-color: blueviolet;
-  font-size: 40px;
+  font-size: 2rem;
+  border: 1px solid black;
+
+  /* align-self */
+  /* The align-self property specifies the alignment for the selected item inside the flexible container. */
+  /*OPTION: auto: stretch: center: flex-start: flex-end: baseline: */
+  /* align-self: center; */
+
 }
 
+
+@media screen and (max-width: 768px) {
+  .demo-flex {
+    flex-wrap: wrap;
+  }
+}
