@@ -1,4 +1,4 @@
-# Demo Hub 01
+# Demo HTML and CSS Hub 01
 
 ## Project Overview
 
