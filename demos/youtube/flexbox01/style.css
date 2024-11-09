@@ -1,0 +1,15 @@
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+  font-size: 40px;
+}
+
