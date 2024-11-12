@@ -1,134 +1,50 @@
 body {
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #444;
-  border-top: #1098ad 10px solid;
+  line-height: 1.4;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+.product {
+  border: 4px solid #c40404;
 }
 
-h1,
-h2,
-h3 {
-  color: hsl(188, 83%, 37%);
-}
-
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-
-  text-transform: uppercase;
+.product-title {
   text-align: center;
-}
-
-p {
-  font-size: 1.2rem;
-
-  line-height: 1.5;
-}
-
-li {
-  font-size: 1.2rem;
-
-  line-height: 1.5;
-}
-
-footer p {
-  font-size: 1rem;
-}
-
-header p {
-  font-size: 1rem;
-}
-
-#author {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-.related-author {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.related {
-  list-style: none;
-}
-
-.main-header {
+  font-size: 22px;
+  text-transform: uppercase;
   background-color: #f7f7f7;
-  padding: 1rem;
 }
-
-aside {
-  background-color: #f7f7f7;
-  border-top: #1098ad 5px solid;
-  border-bottom: #1098ad 5px solid;
-  padding: 1rem;
+.product-price {
+  font-size: 24px;
 }
-
-/* .first-li {
- font-weight: bold;
-} */
-
-li:first-child {
+.product-shipping {
+  font-size: 12px;
+  text-transform: lowercase;
   font-weight: bold;
+  color: #777;
 }
-
-li:last-child {
-  font-style: italic;
-}
-
-/* li:nth-child(2) {
-  color: #f00;
-} */
-/* Styling links */
-a:link {
-  color: #1098ad;
+.product-more-info:hover, .product-more-info:active {
   text-decoration: none;
+  color: #c40404;
 }
 
-a:visited {
-  color: #1098ad;
-  text-decoration: none;
+.product-details-title {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
-a:hover {
-  color: orangered;
-  font-weight: bold;
-  text-decoration: underline dotted #f00;
+.product-details-list {
+  list-style: square;
 }
-
-a:active {
-  background-color: #080808;
-  text-decoration: underline;
+.product-add-to-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-
-
-
-
-#copyright {
-  font-size: 1rem;
+.product-add-to-cart:hover {
+  color: #000;
+  background-color: #fff;
 
 }
