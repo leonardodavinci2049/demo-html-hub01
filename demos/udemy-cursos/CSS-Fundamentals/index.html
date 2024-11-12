@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Fundaments</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="./blog.html">Blog</a>
@@ -14,24 +15,27 @@
         <a href="#">Flexbox</a>
         <a href="#">CSS Grid</a>
       </nav>
-    </header>
+      <p>Test Paragraph 111</p>
 
+      <h3>The Basic language of the web HTML</h3>
+      <img
+        src="img/laura-jones.jpg"
+        alt="Headshot of Laura Jones"
+        height="50"
+        width="50"
+      />
+      <p id="author">
+        Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+      </p>
+      <img
+        src="img/post-img.jpg"
+        alt="HTML code on a screen"
+        width="500"
+        height="200"
+      />
+    </header>
     <section>
       <article>
-        <h3>The Basic language of the web HTML</h3>
-        <img
-          src="img/laura-jones.jpg"
-          alt="Headshot of Laura Jones"
-          height="50"
-          width="50"
-        />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-        <img
-          src="img/post-img.jpg"
-          alt="HTML code on a screen"
-          width="500"
-          height="200"
-        />
         <p>
           All modern websites and web applications are built using three
           <em>fundamental</em> technologies: HTML, CSS and JavaScript. These are
@@ -54,11 +58,11 @@
           or act a certain way.
         </p>
         <p>In HTML, each element is made up of 3 part</p>
-        <ul>
-          <li>an opening tag</li>
+        <ol class="first-list">
+          <li class="first-li">an opening tag</li>
           <li>content</li>
           <li>closing tag</li>
-        </ul>
+        </ol>
         <p>
           You can learn more about HTML by visiting the
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -77,8 +81,8 @@
           the web. here are 5 reasons why you should learn HTML:
         </p>
 
-        <ol>
-          <li>It is easy to learn</li>
+        <ul >
+          <li class="first-li">It is easy to learn</li>
           <li>To be to use the fundamental web dev language</li>
           <li>
             To hand-craft beautiful websites instead of relying on tools like
@@ -87,12 +91,12 @@
           <li>To build web applications</li>
           <li>To impress friends</li>
           <li>To have fun 😃</li>
-        </ol>
+        </ul>
         <p>Hopefully you learned something new here. See you next time!</p>
       </article>
       <aside>
         <h4>Related posts</h4>
-        <ul>
+        <ul class="related">
           <li>
             <img
               src="img/related-1.jpg"
@@ -101,7 +105,7 @@
               width="75"
             />
             <a href="#">How to Learn Web Development</a>
-            <p>By Jonas Schmedtmann</p>
+            <p class="related-author">By Jonas Schmedtmann</p>
           </li>
           <li>
             <img
@@ -111,7 +115,7 @@
               heigth="75"
             />
             <a href="#">The Unknown Powers of CSS</a>
-            <p>By Jim Dillon</p>
+            <p class="related-author">By Jim Dillon</p>
           </li>
 
           <li>
@@ -122,12 +126,14 @@
               height="75"
             />
             <a href="#">Why JavaScript is Awesome</a>
-            <p>By Matilda</p>
+            <p class="related-author">By Matilda</p>
           </li>
         </ul>
       </aside>
     </section>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer>
+      <p id="copyright" class="copyright text">Copyright &copy; 2027 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
