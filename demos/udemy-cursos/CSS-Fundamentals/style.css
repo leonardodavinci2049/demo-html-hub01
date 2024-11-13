@@ -10,12 +10,11 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
-  position: relative;
 }
 
 .container {
   width: 800px;
-/*   margin-left: auto;
+  /*   margin-left: auto;
   margin-right: auto;  */
   margin: 0 auto;
 }
@@ -34,7 +33,21 @@ body {
 
 nav {
   font-size: 18px;
-  /* text-align: center; */
+  text-align: center;
+}
+
+nav a:link {
+  /* background-color: orangered; */
+  /*   margin: 20px;
+  padding: 10px;
+  display:block; */
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* --- ARTICLE HEADER --- */
@@ -43,6 +56,7 @@ nav {
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .post-img {
@@ -50,6 +64,20 @@ nav {
   height: auto;
 }
 
+.button-like {
+  background-color: #1098ad;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  right: 20px;
+  bottom: 20px;
+}
 
 /* --- ARTICLE HEADER --- */
 
@@ -65,9 +93,6 @@ header p {
   font-size: 1rem;
 }
 
-
-
-
 h1,
 h2,
 h3 {
@@ -77,11 +102,49 @@ h3 {
 h1 {
   font-size: 26px;
   text-transform: uppercase;
+
+  box-sizing: border-box;
   font-style: italic;
+  /* background-color: red; */
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+h1::after {
+  content: " [DEMO]";
+  /* font-size: 16px; */
+  color: hsl(188, 83%, 37%);
 }
 
 h2 {
-  font-size: 40px;
+  /* background-color: orange; */
+  position: relative;
+}
+h2::after {
+  content: " TOP";
+  background-color: #ffe70e;
+  color: #444;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  display: inline-block;
+  padding: 5px 10px;
+
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+
+h2 {
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
@@ -127,14 +190,10 @@ li:nth-child(even) {
   /* color: red; */
 }
 
-
-
-
 #author {
   font-style: italic;
   font-size: 18px;
 }
-
 
 .related-author {
   font-size: 18px;
@@ -148,7 +207,6 @@ li:nth-child(even) {
 .related {
   list-style: none;
 }
-
 
 /* Styling links */
 a:link {
