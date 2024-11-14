@@ -6,16 +6,19 @@
     <title>CSS Fundaments</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <a href="./blog.html">Blog</a>
           <a href="./product.html">Challenges</a>
           <a href="#">Flexbox</a>
           <a href="#">CSS Grid</a>
+
         </nav>
+        <!-- <div class="main-header-clear"></div> -->
       </header>
       <main>
         <article>
@@ -26,8 +29,9 @@
               alt="Headshot of Laura Jones"
               height="50"
               width="50"
+              class="post-author-img"
             />
-            <p id="author">
+            <p id="author" class="post-author">
               Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
             </p>
             <img
