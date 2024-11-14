@@ -47,14 +47,22 @@ content article {
 }
 
 .product-price {
+  float: left;
   font-size: 24px;
   font-style: bold;
 }
 .product-shipping {
+  float: right;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 main p {
@@ -143,3 +151,24 @@ main p {
   color: #000;
   background-color: #fff;
 }
+
+/* FLOATS */
+.product-header {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.product-section {
+  float: right;
+  width: 60%;
+  padding: 10px;
+}
+
+.product-section-price { 
+  float: left;
+}
+
+.product-section-details {
+  float: right;
+ }
