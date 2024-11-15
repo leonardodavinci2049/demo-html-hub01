@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -46,9 +47,12 @@ content article {
   letter-spacing: 5px;
 }
 
-.product-price {
+.product-price-shipping {
   float: left;
-  font-size: 24px;
+}
+
+.product-price {
+  font-size: 18px;
   font-style: bold;
 }
 .product-shipping {
@@ -57,6 +61,7 @@ content article {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
+  padding-top: 5px;
 }
 
 .clearfix::after {
@@ -153,22 +158,33 @@ main p {
 }
 
 /* FLOATS */
+
 .product-header {
-  float: left;
-  width: 30%;
   padding: 10px;
 }
+
+/* modulo 1 */
+.product-section-img {
+  float: left;
+  width: 30%;
+  /* padding-left: 10px; */
+}
+
+/* modulo 2 */
 
 .product-section {
   float: right;
   width: 60%;
-  padding: 10px;
 }
 
-.product-section-price { 
+/* modulo 2 */
+.product-section-price {
   float: left;
+  width: 50%;
+  /* margin-top: 10px; */
 }
 
 .product-section-details {
   float: right;
- }
+  width: 40%;
+}
